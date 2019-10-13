@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "关于我们",
+   "backgroundColor": "orange",
+   "enablePullDownRefresh": true
+}

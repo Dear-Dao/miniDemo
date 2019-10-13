@@ -1,0 +1,4 @@
+<!--pages/about/about.wxml-->
+<text>pages/about/about.wxml</text>
+<view>今年：{{age}}岁</view>
+按钮<button size="mini" bindtap="upclick" >+</button>

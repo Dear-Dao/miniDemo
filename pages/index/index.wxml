@@ -1,0 +1,18 @@
+<!--pages/index/index.wxml-->
+<!-- 1 小程序的数据绑定 :{{}} mustache语法   变量使用-->
+<!-- 对应的index.js 文件中的date方法中的name变量 -->
+<view class="title"> hello {{name}}</view>
+<view>今年：{{age }}</view>
+
+<!-- 2.列表展示数组 wx:for循环-->
+<view>{{students[0].name}}</view>
+<view>{{students[2].name}}</view>
+<view>{{students[1].name}}</view>
+<!-- 或者这么写 -->
+<view wx:for="{{students}}">{{item.name}}:{{item.age}}</view>
+
+<!-- 3.事件监听 绑定事件 bindtap(点击事件) -->
+<view>当前点击次数：{{count}}</view>
+<button class="add" size="mini" bindtap="upclick">+</button>
+<button class="add" size="mini" bindtap="downclick">-</button>
+

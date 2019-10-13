@@ -1,0 +1,39 @@
+{
+   "pages": [
+      "pages/index/index",
+      "pages/about/about",
+      "pages/category/category"
+   ],
+   "window": {
+      "navigationBarBackgroundColor": "#ff5777",
+      "navigationBarTextStyle": "white",
+      "navigationBarTitleText": "微信小程序",
+      "backgroundColor": "orange",
+      "enablePullDownRefresh": false
+   },
+   "tabBar": {
+      "selectedColor": "#ff5777",
+      "borderStyle":"black",
+      "list": [
+         {
+            "pagePath": "pages/index/index",
+            "text": "首页",
+            "iconPath": "pages/img/tabbar/index.png",
+            "selectedIconPath": "pages/img/tabbar/index.png"
+         },
+         {
+            "pagePath": "pages/about/about",
+            "text": "关于",
+            "iconPath": "pages/img/tabbar/about.png",
+            "selectedIconPath": "pages/img/tabbar/about.png"
+         },
+         {
+            "pagePath": "pages/category/category",
+            "text": "分类",
+            "iconPath": "pages/img/tabbar/index.png",
+            "selectedIconPath": "pages/img/tabbar/index.png"
+         }
+      ]
+      
+   }
+}
