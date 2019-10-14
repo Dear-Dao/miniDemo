@@ -5,6 +5,13 @@ Page({
     * 页面的初始数据
     */
    data: {
+      message:'哈哈哈'
+   },
+   onclick(){
+      console.log('按钮发生操作'),
+      this.setData({
+         message:'呵呵呵'
+      })
 
    },
 

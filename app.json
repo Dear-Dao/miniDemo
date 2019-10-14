@@ -13,7 +13,7 @@
    },
    "tabBar": {
       "selectedColor": "#ff5777",
-      "borderStyle":"black",
+      "borderStyle": "black",
       "list": [
          {
             "pagePath": "pages/index/index",
@@ -34,6 +34,6 @@
             "selectedIconPath": "pages/img/tabbar/index.png"
          }
       ]
-      
    }
+   
 }

@@ -16,3 +16,8 @@
 <button class="add" size="mini" bindtap="upclick">+</button>
 <button class="add" size="mini" bindtap="downclick">-</button>
 
+<!-- 获取用户信息方式 -->
+<button bindgetuserinfo="handgetUserInfo" size="mini" open-type="getUserInfo"> 获取头像昵称 </button>
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+<view>{{username}}</view>
