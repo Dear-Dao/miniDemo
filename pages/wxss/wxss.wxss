@@ -1,0 +1,19 @@
+/* pages/wxss/wxss.wxss */
+/* 样式的导入 */
+@import './style/weui-searchbar.wxss';
+
+.box{
+   width: 100px;
+   height: 50px;
+   background:palegreen;
+}
+.box1{
+   width: 100px;
+   height: 100px;
+   background:  peru;
+}
+.box2{
+   width: 200rpx;
+   height: 200rpx;
+   background:  pink;
+}
