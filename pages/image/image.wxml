@@ -1,0 +1,29 @@
+<!--pages/image/image.wxml-->
+<!-- 
+   重点 1. image组件可以写单标签，也可以双标签
+   2.image 有默认的大小 宽320*高240
+   3.是一个行内块级元素
+ -->
+<!-- 显示图片 src属性  本地图片路径 -->
+<!-- 绝对路径 -->
+<image src="/pages/img/1.jpeg"/>
+<!-- 相对路径 -->
+<image src="../../pages/img/1.jpeg"/>
+<!-- 显示图片 src属性  远程图片 直接网页上右键复制图片地址即可-->
+<image src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1391149153,291295030&fm=26&gp=0.jpg"/>
+
+<!-- 补充  显示相册中的图片-->
+<button bindtap="handphoto">选择相册图片</button>
+<image src="{{imagePath}}"/>
+<!-- 3.show-menu-by-longpress  长按图片识别小程序码 -->
+<image show-menu-by-longpress
+   src="/pages/img/1.jpeg"/>
+
+<view>-------------------------</view>
+<!-- 4.bindload  监听图片加载完成 
+   lazy-load  默认 false 加了属性则为true 图片懒加载，在即将进入一定范围（上下三屏）时才开始加载
+-->
+<image wx:for="{{10}}"
+   bindload="handlephoto"
+   lazy-load
+   src="/pages/img/2.jpeg"/>

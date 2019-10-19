@@ -1,0 +1,20 @@
+<!--pages/scroll/scroll.wxml-->
+<!-- 1.水平滚动 scroll-x 设置水平滚动-->
+<!-- 前提 view 为块级元素 设置为 inline-block  scroll-view设置样式设置为不换行 white-space: nowrap;-->
+<scroll-view class="conn" scroll-x>
+   <view wx:for="{{10}}" class="item1">{{item}}</view>
+</scroll-view>
+
+
+<!-- 2.垂直滚动 scroll-y 前提固定高度-->
+<scroll-view class="conn1" scroll-y>
+   <view wx:for="{{10}}" class="item2">{{item}}</view>
+</scroll-view>
+
+<!-- 3.其他事件的补充 -->
+<scroll-view class="conn1" 
+   scroll-y
+   bindscroll="bindScroll"   >
+   <view wx:for="{{10}}" class="item2">{{item}}</view>
+</scroll-view>
+

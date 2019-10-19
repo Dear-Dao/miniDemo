@@ -1,0 +1,26 @@
+/* pages/view/view.wxss */
+.box1{
+   background: red;
+}
+.box2{
+   background: green;
+}
+.box3{
+   width: 100px;
+   height: 100px;
+   background: rebeccapurple;
+}
+.box3-hover{
+   background: greenyellow;
+   font-size: 35px;
+
+}
+.box4{
+   width: 200px;
+   height: 200px;
+   background: grey;
+   margin-top: 20px;
+}
+.box4-hover{
+   background: blue;
+}

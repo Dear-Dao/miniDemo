@@ -1,0 +1,6 @@
+/* pages/button/button.wxss */
+.bj{
+   background: orangered;
+   color: red;
+   size: mini;
+}

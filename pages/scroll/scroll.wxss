@@ -1,0 +1,25 @@
+/* pages/scroll/scroll.wxss */
+.conn{
+   background: palegoldenrod;
+   /* 设置为不换行 */
+   white-space: nowrap;
+}
+
+.item1{
+   background: palevioletred;
+   width: 100px;
+   height:100px;
+   margin: 10px;
+   display: inline-block;
+}
+.conn1{
+   background: rgb(170, 230, 238);
+   height: 200px;
+   margin-top:10px; 
+}
+
+.item2{
+   background: orchid;
+   height:100px;
+   margin: 10px;
+}

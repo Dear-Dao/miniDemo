@@ -1,0 +1,20 @@
+<!--pages/text/text.wxml-->
+<!-- 1.基本语法 -->
+<text>hello world\n</text>  
+<text>你好世界上的小程序\n</text>   
+
+<!-- 2.text的基本属性 -->
+<!--selectable ：true  默认下text的文本长按不能被选中 true则为长按选中  两种写法都可以-->
+<text selectable="{{true}}">daodao 在干嘛？\n</text>
+<text selectable>daodao 在干嘛？\n</text>
+
+<!-- 3. space:决定文本的空格大小-->
+<text>hello world\n</text> 
+<text space="nbsp">hello world\n</text> 
+<text space="ensp">hello world\n</text> 
+<text space="emsp">hello world\n</text> 
+
+<!-- 4.decode属性：是否界面文本 -->
+<text decode>5 &gt; 3 </text>
+
+
