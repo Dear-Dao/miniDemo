@@ -12,7 +12,8 @@ Page({
          {id: 111, name: 'james', age: '13' },
          {id: 112, name: 'lin', age: '14' }
       ],
-      count:0
+      count:0,
+      tittle:['盖伦','小炮','盲僧']
    },
    /**
     * 绑定点击事件
@@ -43,60 +44,54 @@ Page({
             age: this.data.age - 2
          })
    },
-
-   /**
-    * 生命周期函数--监听页面加载
-    */
-   onLoad: function (options) {
-
+   touchstart(){
+      console.log('touchstart触摸开始')
    },
 
-   /**
-    * 生命周期函数--监听页面初次渲染完成
-    */
-   onReady: function () {
-
+   touchmove() {
+      console.log('touchmove手指一动')
    },
-
-   /**
-    * 生命周期函数--监听页面显示
-    */
-   onShow: function () {
-
+   touchend() {
+      console.log('touchend结束触摸')
    },
-
-   /**
-    * 生命周期函数--监听页面隐藏
-    */
-   onHide: function () {
-
+   tap() {
+      console.log('tap')
    },
-
-   /**
-    * 生命周期函数--监听页面卸载
-    */
-   onUnload: function () {
-
+   longpress(){
+      consloe.log('longpress')
    },
-
-   /**
-    * 页面相关事件处理函数--监听用户下拉动作
-    */
-   onPullDownRefresh: function () {
-
+   handevent(event){
+      console.log(event)
    },
-
-   /**
-    * 页面上拉触底事件的处理函数
-    */
-   onReachBottom: function () {
-
+   handItem(event){
+      // consloe.log(event)
+      console.log(event)
+      const dataset = event.currentTarget.dataset
+      const item = dataset.item
+      const index = dataset.index
+      console.log(item)
+      console.log(index)
+   
    },
-
-   /**
-    * 用户点击右上角分享
-    */
-   onShareAppMessage: function () {
-
+   captureView1(){
+      console.log('captureView1')
+   },
+   bindview1(){
+      console.log('bindview1')
+   },
+   captureView2() {
+      console.log('captureView2')
+   },
+   bindview2() {
+      console.log('bindview2')
+   },
+   captureView3() {
+      console.log('captureView3')
+   },
+   bindview3() {
+      console.log('bindview3')
    }
+
+
+
 })

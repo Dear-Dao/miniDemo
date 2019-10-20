@@ -1,0 +1,32 @@
+<!--pages/wxs/wxs.wxml-->
+<!-- 1. wxs的定义方式 
+直接定义在wxml文件中
+-->
+<!-- <wxs module="info">
+   var message = "hello world";
+   var sum = function(num1, num2) {
+      return num1 + num2
+   }
+   module.exports = {
+      message: message,
+      sum:sum
+   }
+</wxs> -->
+<!-- commonjs模块化导出 wxml才可以使用mustcahe语法-->
+
+<!-- 2.定义在单独的wxs文件中，在使用<wxs> 文件导入
+   不能使用绝对路径,必须使用相对路劲
+一、绝对路径；
+以“/”开头代表根目录，
+/ada/like/index
+二、相对路径
+../../ada/like/index
+或者：
+ada/like/index
+ -->
+<wxs src="../info.wxs" module="info"/>
+<view> {{info.message}} </view>
+<view> {{info.sum(1,2)}} </view>
+
+<!-- 3.wxs的应用 -->
+<view>{{info.priceFormat(price,3)}}</view>

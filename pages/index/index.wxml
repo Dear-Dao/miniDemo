@@ -9,10 +9,35 @@
 <view>{{students[2].name}}</view>
 <view>{{students[1].name}}</view>
 <!-- 或者这么写 -->
-<view wx:for="{{students}}">{{item.name}}:{{item.age}}</view>
+<view wx:for="{{students}}" wx:key='{{stu}}'>{{item.name}}:{{item.age}}</view>
 
 <!-- 3.事件监听 绑定事件 bindtap(点击事件) -->
 <view>当前点击次数：{{count}}</view>
 <button class="add" size="mini" bindtap="upclick">+</button>
 <button class="add" size="mini" bindtap="downclick">-</button>
 
+<!-- 4.常见事件 -->
+<view class="box" bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend" bindtap="tap" bindlongpress="longpress">
+</view>
+
+<!-- 事件对象的分析 -->
+<button size="mini" bindtap="handevent">事件对象</button>
+
+<!-- 事件的传递参数 -->
+<view class="conner">
+   <block wx:for="{{tittle}}" wx:key="{{num}}">
+      <view class="item" bindtap="handItem" data-index="{{index}}" data-item="{{item}}">
+         {{item}} {{index}}</view>
+   </block>
+</view>
+
+<!-- 事件冒泡(bind和catch后可以紧跟一个冒号，其含义不变，如bind:tap、catch:touchstart。)
+事件的捕获阶段(可以采用capture-bind、capture-catch关键字) 
+bind:一层层的传递
+catch：阻止事件进一步传递
+-->
+<view class="view1" capture-bind:tap="captureView1" bindtap="bindview1">
+   <view class="view2" capture-catch:tap="captureView2" bindtap="bindview2">
+      <view class="view3" capture-bind:tap="captureView3" bindtap="bindview3"></view>
+   </view>
+</view>

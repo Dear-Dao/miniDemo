@@ -1,0 +1,19 @@
+var message = "hello world"
+var sum = function (num1, num2) {
+   return num1 + num2
+}
+
+function priceFormat(price,number){
+   var number = number || 2;//表示有传number则值为number，没传则固定值为2
+   var f_price = parseFloat(price);//转换为float的类型
+   return f_price.toFixed(number);
+}
+
+
+
+module.exports = {
+   message: message,
+   sum: sum,
+   priceFormat: priceFormat
+
+}

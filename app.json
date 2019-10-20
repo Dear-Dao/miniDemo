@@ -1,5 +1,6 @@
 {
    "pages": [
+      "pages/wxs/wxs",
       "pages/index/index",
       "pages/about/about",
       "pages/category/category"
@@ -13,7 +14,7 @@
    },
    "tabBar": {
       "selectedColor": "#ff5777",
-      "borderStyle":"black",
+      "borderStyle": "black",
       "list": [
          {
             "pagePath": "pages/index/index",
@@ -34,6 +35,6 @@
             "selectedIconPath": "pages/img/tabbar/index.png"
          }
       ]
-      
-   }
+   },
+   "sitemapLocation": "sitemap74.json"
 }
