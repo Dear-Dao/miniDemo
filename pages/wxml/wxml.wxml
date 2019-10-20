@@ -1,0 +1,86 @@
+<!--pages/wxml/wxml.wxml-->
+<!-- 1.wxml的格式 有头有尾或者单标签-->
+<view>{{message}}</view>
+<image src="/pages/img/tabbar/about.png" style="height:30px;width:30px" />
+<input/>
+
+<!-- 2.Mustache 语法 -->
+<view>{{name}}</view>
+<view>{{name}} {{message}}</view>
+<view>{{name +' '+ message}}</view>
+<!-- 使用三目运算符 -->
+<view>{{age >= 18 ? '成年人' : '未成年'}}</view>
+<view>{{nowTime}}</view>
+
+<button size="mini" bindtap="handcolor">变换颜色</button>
+<view class="box {{isActive ? 'isactive' : ''}}"></view>
+
+<view>----------------条件判断------------------</view>
+<!-- wx；if条件判断 -->
+<button size="mini" bindtap="chosecolr">切换显示</button>
+<view wx:if='{{isShow}}'>哈哈哈</view>
+
+<!-- wx:elif  /wx:else -->
+<button size="mini" bindtap="upscore">分数递增6</button>
+<view wx:if='{{score >=90}}'>优秀</view>
+<view wx:elif='{{score >=80}}'>良好</view>
+<view wx:elif='{{score >=60}}'>及格</view>
+<view wx:else>不及格</view>
+
+<!-- hidden属性  控制内容的隐藏-->
+<view hidden="{{false}}">456456464564</view>
+<view>-------------------------------</view>
+<!-- wx：if与hidden的区别 
+ wx：if :隐藏是没有创建对应的组件 false代表隐藏 true不隐藏
+ hidden：将组件隐藏起来，依然存在属性为（dispaly: none）true代表隐藏 false不隐藏
+选择：
+   如果显示和隐藏切换的频率比较高的时候选择：hidden
+   如果显示和隐藏切换的频率非常低的时候选择：wx:if
+-->
+<view hidden="{{true}}">hidden的控制隐藏内容</view>
+<view wx:if='{{false}}'>wx:if的控制隐藏内容</view>
+
+<!-- wx:for 列表渲染 -->
+<!-- 1.wx:for 基础 遍历数组/字符串/数字-->
+<!-- <view wx:for="{{['789','456','123']}}">{{item}} {{index}} </view>
+<view wx:for="{{['789','456','123']}}">{{item}}</view>
+<view wx:for="helloworld">{{item}}</view>
+<view wx:for="{{5}}">{{item}}</view> -->
+
+<!-- block 只是一个标签，不会产生渲染 -->
+<block wx:for="{{3}}">
+   <view>hahah</view>
+   <view>1231546</view>
+   <button>按钮</button>
+</block>
+<!-- 3.item 、idnex 的起名字 -->
+<view wx:for="{{movies}}" wx:for-item="movie" wx:for-index="i">{{movie}} {{i}}</view>
+<!-- 多层遍历 -->
+<block wx:for="{{nums}}" wx:for-item="out_num">
+   <block wx:for="{{out_num}}" wx:for-item="in_num">
+      <view>{{in_num}}</view>
+   </block>
+</block>
+<view>---------------key的作用-----------</view>
+<!-- key的作用 数组中的数据不能重复-->
+<view wx:for="{{number}}" wx:key="{{item}}">{{item}}</view>
+
+<view>--------------template模板---------------</view>
+<!-- 模板 
+   之前小程序不支持自定义组件，为了进行代码复用：template 必须要有name属性
+   模板中包裹的内容，在没有使用前，是不会进行任何的渲染
+-->
+<!-- <template name="contentItem">
+   <button size="mini" bindtap="showcolor">{{btn}}</button>
+   <view>{{btn1}}</view>
+</template> -->
+<!-- 导入模板 
+   import导入： 主要是导入template 不能进行递归导入
+   include引入：将公共的wxml中的组件抽取到一个文件中，不能导入template和wxs ,可以进行递归导入
+-->
+<import src="../template/template.wxml"/>
+<!-- data 传入属性值 -->
+<template is="contentItem" data="{{btn1:color,btn:'按钮'}}"/>
+<template is="contentItem" data="{{btn1:color,btn:'警告'}}"/>
+
+

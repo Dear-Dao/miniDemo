@@ -1,0 +1,4 @@
+<template name="contentItem">
+   <button size="mini" bindtap="showcolor">{{btn}}</button>
+   <view>{{btn1}}</view>
+</template>
