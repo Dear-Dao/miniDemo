@@ -1,0 +1,10 @@
+/* catalog/myprop/myprop.wxss */
+.title {
+   font-size: 25px;
+   text-align: center;
+   height: 35px;
+   font-weight: 700;
+}
+.titlecolor{
+   
+}

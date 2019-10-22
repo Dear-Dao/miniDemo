@@ -1,0 +1,6 @@
+/* catalog/cpn/cpn.wxss */
+.box{
+  
+   height: 50px;
+   background: orange;
+}

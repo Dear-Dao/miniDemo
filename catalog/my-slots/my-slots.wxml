@@ -1,0 +1,7 @@
+<!--catalog/my-slots/my-slots.wxml-->
+<!-- 多个插槽的使用 -->
+<view class="">插槽的slots的开始{{count}}</view>
+<slot name='slot1'/>
+<slot name='slot2'/>
+<slot name='slot3'/>
+<view class="">插槽的slots的结束</view>

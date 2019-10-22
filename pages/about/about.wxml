@@ -2,3 +2,5 @@
 <text>pages/about/about.wxml</text>
 <view>今年：{{age}}岁</view>
 按钮<button size="mini" bindtap="upclick" >+</button>
+
+<tab-control titles="{{['瞎子','盲僧','小炮']}}"/>

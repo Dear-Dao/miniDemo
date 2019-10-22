@@ -1,0 +1,13 @@
+<!--catalog/w-tab-control/w-tab-control.wxml-->
+<view class="tab-control">
+   <block wx:for="{{titles}}" wx:key="{{index}}">
+      <!-- 使用三目运算符判断key值，从而设置样式 -->
+      <view class="tab {{currentIndex == index ? 'active' : ''}}"
+         bindtap="hindclick"
+         data-index="{{index}}">
+         
+         <text bindtap="handData">{{item}}</text>
+      </view>
+   </block>
+
+</view>

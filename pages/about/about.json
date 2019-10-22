@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+      "tab-control": "/catalog/w-tab-control/w-tab-control"
+  },
   "navigationBarTitleText": "关于我们",
    "backgroundColor": "orange",
    "enablePullDownRefresh": true

@@ -1,0 +1,11 @@
+<!--catalog/my-cpn/my-cpn.wxml-->
+<!-- 1.自定义组件的基本使用
+   在使用的page页面的json文件中，使用 则注册成功
+   "usingComponents": {
+      "my-cpn": "/catalog/my-cpn/my-cpn"
+      
+   }
+ -->
+<view class="title">{{title}}</view>
+<view class="content">{{content}}</view>
+<cpn/>

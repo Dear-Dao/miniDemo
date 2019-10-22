@@ -1,0 +1,21 @@
+/* catalog/w-tab-control/w-tab-control.wxss */
+.tab-control{
+   display: flex;
+   height: 88rpx;
+   line-height: 88rpx;
+}
+.tab{
+   flex: 1;
+   background: palegoldenrod;
+   text-align: center;
+}
+.active{
+   color: red;
+   /* 下滑横线 */
+   
+}
+.active text{
+   padding: 15rpx 0rpx;
+   border-bottom: 4rpx solid red;
+}
+

@@ -1,0 +1,2 @@
+<!--catalog/event/event.wxml-->
+<button size="mini" bindtap="celCount">+2</button>

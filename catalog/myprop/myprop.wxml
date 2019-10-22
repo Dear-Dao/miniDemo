@@ -1,0 +1,3 @@
+<!--catalog/myprop/myprop.wxml-->
+<view class="title titlecolor">{{title}}</view>
+<view>我是内容</view>

@@ -1,0 +1,11 @@
+/* catalog/my-cpn/my-cpn.wxss */
+
+.title {
+   font-size: 15px;
+   text-align: center;
+   color: rgb(172, 33, 23);
+   font-weight: 700;
+}
+
+.content {
+}

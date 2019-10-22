@@ -43,9 +43,10 @@
 			"current": 0,
 			"list": [
 				{
-					"id": -1,
-					"name": "关于",
+					"id": 0,
+					"name": "pages/about/about",
 					"pathName": "pages/about/about",
+					"query": "",
 					"scene": null
 				}
 			]

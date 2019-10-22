@@ -1,20 +1,15 @@
 /* pages/index/index.wxss */
-.title{
+.mystyle{
    color: red;
-   font-size: 45px;
-}
-.btn{
-   border: 1px seagreen;
-   height: 45px;
-   width: auto;
-   font-size: 15px;
-   background: yellowgreen;
-
-}
-.btn ::before{
-   background: red;
-}
-.add{
-   background: yellowgreen;
    font-size: 25px;
+}
+
+.red{
+   color: red;
+}
+.green{
+   color: greenyellow;
+}
+.yellow{
+   color: yellow;
 }

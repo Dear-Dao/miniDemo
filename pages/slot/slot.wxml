@@ -1,0 +1,26 @@
+<!-- 当插槽的使用 -->
+<my-slot>
+   <button size="mini">我是插入的按钮</button>
+</my-slot>
+<my-slot>
+   <view size="mini">我是插入的文本</view>
+</my-slot>
+<my-slot>
+   <image src="/pages/img/tabbar/index.png"/>
+   <slider value=""></slider>
+</my-slot>
+
+<!-- 多个插槽的使用 -->
+<!-- 
+   注意事项：
+   1.给每一个插槽去一个名字 name属性
+   2.必须在component(自定义组件的js文件中) 对象中添加options属性 写法 options:{
+      multipleSlots:true
+   }
+ -->
+
+<my-slots>
+   <button size="mini" slot='slot2'>我是插入的按钮</button>
+   <slider slot='slot1'/>
+   <view slot='slot3'>哈哈哈</view>
+</my-slots>

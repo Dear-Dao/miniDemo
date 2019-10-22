@@ -1,0 +1,3 @@
+<!--catalog/select/select.wxml-->
+<view>{{counter}}</view>
+<view>{{open}}</view>

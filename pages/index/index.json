@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+     "mystyle":"/catalog/mystyle/mystyle",
+     "myprop":"/catalog/myprop/myprop",
+     "event":"/catalog/event/event",
+     "tab-control": "/catalog/w-tab-control/w-tab-control",
+     "select":"/catalog/select/select"
+  }
 }

@@ -1,5 +1,9 @@
 {
+   "usingComponents": {
+      "my-cpn": "/catalog/my-cpn/my-cpn"
+   },
    "pages": [
+      "pages/slot/slot",
       "pages/index/index",
       "pages/about/about",
       "pages/category/category"
@@ -13,7 +17,7 @@
    },
    "tabBar": {
       "selectedColor": "#ff5777",
-      "borderStyle":"black",
+      "borderStyle": "black",
       "list": [
          {
             "pagePath": "pages/index/index",
@@ -34,6 +38,5 @@
             "selectedIconPath": "pages/img/tabbar/index.png"
          }
       ]
-      
    }
 }
