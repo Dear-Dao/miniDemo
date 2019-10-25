@@ -1,0 +1,13 @@
+<!--pages/window/window.wxml-->
+<!-- 1.Toast 的弹窗 -->
+<button size="mini" bind:tap="showToast">展示toast弹窗</button>
+<!-- 2.ShowModel 的弹窗 -->
+<button size="mini" bind:tap="ShowModel">展示ShowModel弹窗</button>
+<!-- 3.ShowLoading 的弹窗 -->
+<button size="mini" bind:tap="ShowLoading">展示ShowLoading弹窗</button>
+
+<!-- 4.showActionSheet 的弹窗 -->
+<button size="mini" bind:tap="showActionSheet">展示showActionSheet弹窗</button>
+
+<!-- 5.分享按钮 设置  open-type="share"-->
+<button size="mini" open-type="share">分享按钮</button>
