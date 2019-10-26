@@ -1,4 +1,4 @@
-// pages/category/category.js
+// pages/comment/commment.js
 Page({
 
    /**

@@ -1,0 +1,4 @@
+<!--pages/comment/commment.wxml-->
+<text>pages/comment/commment.wxml</text>
+
+<navigator open-type="navigateBack" delta="2">放回首页</navigator>

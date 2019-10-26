@@ -16,3 +16,21 @@
 <button class="add" size="mini" bindtap="upclick">+</button>
 <button class="add" size="mini" bindtap="downclick">-</button>
 
+<!-- 页面跳转 navigator-->
+<navigator url="/pages/navigator/navigator">调到navigator页面</navigator>
+
+<!-- 页面跳转 navigator open-type的属性 redirect ： 重定向-->
+<navigator url="/pages/navigator/navigator" open-type="redirect">调到navigator的open-type的属性redirect</navigator>
+
+<!-- 页面跳转 switchTab属性-->
+<navigator url="/pages/about/about" open-type="switchTab">调到navigator页面 (switchTab)</navigator>
+
+<!-- 页面跳转 reLaunch属性-->
+<navigator url="/pages/about/about" open-type="reLaunch">调到navigator页面 (reLaunch)</navigator>
+<view>-------------------------------------</view>
+<!-- 页面跳转 navigator 传递数据-->
+<navigator url="/pages/navigator/navigator?name=dao&age=18">跳转页面并且传递数据</navigator>
+<view>{{title}}{{pig}}</view>
+
+<!-- 通过其它方式跳转 -->
+<button size="mini" bind:tap="chosePage">调到navigator页面</button>

@@ -1,0 +1,5 @@
+<!--pages/navigator/navigator.wxml-->
+<text>navigator页面的跳转</text>
+<navigator open-type="navigateBack">放回上一页</navigator>
+
+<navigator url="/pages/comment/comment">调到comment页面</navigator>

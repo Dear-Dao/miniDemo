@@ -2,7 +2,9 @@
    "pages": [
       "pages/index/index",
       "pages/about/about",
-      "pages/category/category"
+      "pages/navigator/navigator",
+      "pages/comment/comment"
+
    ],
    "window": {
       "navigationBarBackgroundColor": "#ff5777",
@@ -13,7 +15,7 @@
    },
    "tabBar": {
       "selectedColor": "#ff5777",
-      "borderStyle":"black",
+      "borderStyle": "black",
       "list": [
          {
             "pagePath": "pages/index/index",
@@ -26,14 +28,8 @@
             "text": "关于",
             "iconPath": "pages/img/tabbar/about.png",
             "selectedIconPath": "pages/img/tabbar/about.png"
-         },
-         {
-            "pagePath": "pages/category/category",
-            "text": "分类",
-            "iconPath": "pages/img/tabbar/index.png",
-            "selectedIconPath": "pages/img/tabbar/index.png"
          }
       ]
-      
-   }
+   },
+   "sitemapLocation": "sitemap52.json"
 }

@@ -2,3 +2,5 @@
 <text>pages/about/about.wxml</text>
 <view>今年：{{age}}岁</view>
 按钮<button size="mini" bindtap="upclick" >+</button>
+
+<navigator open-type="navigateBack" delta="2">跳回首页</navigator>
